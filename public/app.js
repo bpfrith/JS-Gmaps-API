@@ -12,6 +12,9 @@ var initialize = function(){
 
   button.onclick = mainMap.gotoWollongong.bind(mainMap);
 
+  var goToMyLocation = document.querySelector('#my-location');
+  mainMap.getCurrentLocation(goToMyLocation);
+
 };
 
 window.onload = initialize;
